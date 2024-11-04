@@ -1,10 +1,11 @@
-﻿namespace ConsultorioOdontologico
+﻿using ConsultorioOdontologico.Interface;
+namespace ConsultorioOdontologico
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            MenuPrincipal.menuPrincipal();
         }
     }
 }

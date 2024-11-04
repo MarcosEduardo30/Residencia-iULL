@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Program.cs",
-              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Program.cs",
-              "RelativeToolTip": "ConsultorioOdontologico\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Entidades\\Consulta.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Entidades\\Consulta.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Entidades\\Consulta.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\Entidades\\Consulta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T20:39:02.909Z",
+              "WhenOpened": "2024-11-04T20:24:01.764Z",
               "EditorCaption": ""
             }
           ]
