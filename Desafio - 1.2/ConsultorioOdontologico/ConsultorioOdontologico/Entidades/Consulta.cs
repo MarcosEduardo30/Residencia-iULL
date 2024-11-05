@@ -13,9 +13,12 @@ namespace ConsultorioOdontologico.Entidades
         public TimeOnly horaInicio;
         public TimeOnly horaFim;
 
-        public Consulta(string CPFPaciente, DateTime data)
+        public Consulta(string CPFPaciente, DateOnly data, TimeOnly horaInicio, TimeOnly horaFim)
         {
-                
+            this.CPFPaciente = CPFPaciente;
+            this.dataConsulta = data;
+            this.horaInicio = horaInicio;
+            this.horaFim = horaFim;
         }
 
     }

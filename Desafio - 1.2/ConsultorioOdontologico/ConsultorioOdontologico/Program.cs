@@ -5,6 +5,9 @@ namespace ConsultorioOdontologico
     {
         static void Main(string[] args)
         {
+            string teste = "0815";
+            Console.WriteLine(teste.Substring(0, 2));
+            Console.WriteLine(teste.Substring(2));
             MenuPrincipal.menuPrincipal();
         }
     }

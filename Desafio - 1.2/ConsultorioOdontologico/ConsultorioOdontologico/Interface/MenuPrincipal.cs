@@ -21,6 +21,9 @@ namespace ConsultorioOdontologico.Interface
                     case "1":
                         PacienteInterface.MenuPacientes(consultorio);
                         break;
+                    case "2":
+                        ConsultaInterface.MenuConsultas(consultorio);
+                        break;
                     case "3":
                         loop = false;
                         break;
@@ -29,6 +32,7 @@ namespace ConsultorioOdontologico.Interface
                         break;
                 }
             }
+            Console.WriteLine("\n \n \n \n \n \n \n");
 
             foreach (Paciente p in consultorio.pacientes)
             {
@@ -37,7 +41,7 @@ namespace ConsultorioOdontologico.Interface
 
             foreach(Consulta c in consultorio.consultas)
             {
-                Console.WriteLine($"CPF Paciente: {c.CPFPaciente} || DataConsulta: {c.dataConsulta}");
+                Console.WriteLine($"CPF Paciente: {c.CPFPaciente} || DataConsulta: {c.dataConsulta} || Hora inicio: {c.horaInicio} || Hora Fim: {c.horaFim}");
             }
             
         }

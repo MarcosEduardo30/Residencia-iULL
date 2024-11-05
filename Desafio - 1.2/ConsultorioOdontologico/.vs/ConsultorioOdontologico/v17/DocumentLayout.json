@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\logicadenegocio\\valida\u00E7\u00F5es\\consultavalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\logicadenegocio\\valida\u00E7\u00F5es\\consultavalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\interface\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\interface\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\interface\\consultainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\interface\\consultainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\logicadenegocio\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\logicadenegocio\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Consulta.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "RelativeToolTip": "ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
+              "DocumentIndex": 3,
+              "Title": "ConsultaController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\ConsultaController.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\LogicaDeNegocio\\ConsultaController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\ConsultaController.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\LogicaDeNegocio\\ConsultaController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T20:24:01.764Z",
+              "WhenOpened": "2024-11-04T22:18:34.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsultaInterface.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAYwGUAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:13:15.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsultaValidacoes.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAvwCIAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:04:41.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuPrincipal.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Interface\\MenuPrincipal.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\MenuPrincipal.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\Interface\\MenuPrincipal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:03:22.29Z",
               "EditorCaption": ""
             }
           ]
