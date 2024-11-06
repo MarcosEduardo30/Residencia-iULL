@@ -10,6 +10,18 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             else return false;
         }
 
+        public static bool existeConsultaFutura(this Consultorio consultorio, string CPF)
+        {
+            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
+            bool existeconsulta = consultorio.consultas
+                                  .Exists(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
+            if (existeconsulta)
+                return true;
+            else
+                return false;
+        }
+
         public static string isDataFormatValid(string data)
         {
             string[] subData = data.Split('/');
@@ -48,5 +60,7 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             else 
                 return "";
         }
+    
+    
     }
 }

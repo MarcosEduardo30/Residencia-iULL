@@ -24,6 +24,9 @@ namespace ConsultorioOdontologico.Interface
                     case "1":
                         CadastrarPaciente(consultorio);
                         break;
+                    case "2":
+                        ExcluirPaciente(consultorio);
+                        break;
                     case "5":
                         loop = false;
                         break;
@@ -43,7 +46,7 @@ namespace ConsultorioOdontologico.Interface
             while (true) {
                 Console.Write("CPF: ");
                 CPF = Console.ReadLine().Trim();
-                string CPFVal = PacienteValidacoes.validarCPF(CPF, consultorio);
+                string CPFVal = PacienteValidacoes.validarCPF(consultorio, CPF);
                 if (CPFVal != ""){
                     Console.WriteLine(CPFVal);
                     continue;
@@ -79,5 +82,19 @@ namespace ConsultorioOdontologico.Interface
             Console.WriteLine("Paciente cadastrado com sucesso");
         }
 
+        public static void ExcluirPaciente(Consultorio consultorio)
+        {
+            Console.Write("CPF: ");
+            string CPFInput = Console.ReadLine();
+            string CPFVal = PacienteValidacoes.isPacienteDeleteValid(consultorio, CPFInput);
+            if (CPFVal != "")
+                Console.WriteLine(CPFVal);
+            else
+            {
+                consultorio.DeletarPaciente(CPFInput);
+                Console.WriteLine("Paciente deletado com sucesso");
+            }
+                
+        }
     }
 }

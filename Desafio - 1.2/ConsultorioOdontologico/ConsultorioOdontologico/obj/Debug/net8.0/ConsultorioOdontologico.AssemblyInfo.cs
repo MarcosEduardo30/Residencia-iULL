@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsultorioOdontologico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46db4b20e83274363ea16e8f7dd6369d351b5b7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dfe2e67c7e2356f5117700a5a3b3236e40c0e16")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsultorioOdontologico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsultorioOdontologico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

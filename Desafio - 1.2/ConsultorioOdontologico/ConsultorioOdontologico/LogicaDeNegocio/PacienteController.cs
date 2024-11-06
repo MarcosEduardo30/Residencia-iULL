@@ -9,5 +9,11 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
             Paciente paciente = new Paciente(CPF, Nome, DataNascimento);
             con.pacientes.Add(paciente);
         }
+
+        public static void DeletarPaciente(this Consultorio con, string CPF)
+        {
+            con.pacientes.RemoveAll(p => p.CPF == CPF);
+            con.DeletarConsulta(CPF);
+        }
     }
 }

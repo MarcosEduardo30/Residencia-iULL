@@ -10,7 +10,7 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
     
     public static class PacienteValidacoes
     {
-        public static string validarCPF(string CPF, Consultorio consultorio)
+        public static string validarCPF(Consultorio consultorio, string CPF)
         {
             if (CPF == null || CPF == "")  
                 return "Erro: CPF não pode ser nulo";
@@ -77,5 +77,13 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             else return "Erro: O paciente deve possuir mais de 13 anos";
         }
 
+        public static string isPacienteDeleteValid(Consultorio consultorio, string CPF)
+        {
+            if (!consultorio.isCPFCadastrado(CPF))
+                return "Erro: CPF não cadastrado";
+            if (consultorio.existeConsultaFutura(CPF))
+                return "Erro: Paciente possui uma consulta futura. Não foi possível a exclusão.";
+            return "";
+        }
     }
 }

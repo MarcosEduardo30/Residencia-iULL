@@ -20,18 +20,6 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
                 return "";
         }
 
-        public static bool existeConsultaFutura(this Consultorio consultorio, string CPF)
-        {
-            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
-            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
-            bool existeconsulta = consultorio.consultas
-                                  .Exists(c => c.CPFPaciente == CPF && c.dataConsulta >= dataAtual && c.horaInicio >= horaAtual);
-            if (existeconsulta)
-                return true;
-            else
-                return false;
-        }
-
         public static string isHourFormatValid(string hora)
         {
             if (hora == null || hora == "") 
