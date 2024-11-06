@@ -44,16 +44,17 @@ namespace ConsultorioOdontologico.Interface
             {
                 Console.Write("CPF: ");
                 CPF = Console.ReadLine().Trim();
-                bool CPFVal = consultorio.isCPFCadastrado(CPF);
-                if (!CPFVal)
+                string CPFVal = ConsultaValidacoes.validarCPF(consultorio, CPF);
+                if (CPFVal != "")
                 {
-                    Console.WriteLine("Erro: Paciente não cadastrado");
-                    continue;
+                    Console.WriteLine(CPFVal);
+                    return;
                 }
                 else break;
             }
 
-            while (true) {
+            while (true)
+            {
                 Console.Write("Data da Consulta: ");
                 Data = Console.ReadLine().Trim();
                 string DataVal = Validacoes.isDataFormatValid(Data);
@@ -62,52 +63,42 @@ namespace ConsultorioOdontologico.Interface
                     Console.WriteLine(DataVal);
                     continue;
                 }
-                else break;
-            }
 
-            while (true)
-            {
                 Console.Write("Hora Inicial: ");
                 string InicioInput = Console.ReadLine().Trim();
-                string HoraVal = ConsultaValidacoes.isHourFormatValid(InicioInput);
-                if (HoraVal != "")
+                string InicioVal = ConsultaValidacoes.isHourFormatValid(InicioInput);
+                if (InicioVal != "")
                 {
-                    Console.WriteLine(HoraVal);
+                    Console.WriteLine(InicioVal);
                     continue;
                 }
-                else{
+                else
                     HoraInicio = new TimeOnly(int.Parse(InicioInput.Substring(0, 2)), int.Parse(InicioInput.Substring(2)));
-                    break;
-                }
-            }
 
-            while (true)
-            {
                 Console.Write("Hora Final: ");
                 string FimInput = Console.ReadLine().Trim();
-                string HoraVal = ConsultaValidacoes.isHourFormatValid(FimInput);
-                if (HoraVal != "")
+                string FimVal = ConsultaValidacoes.isHourFormatValid(FimInput);
+                if (FimVal != "")
                 {
-                    Console.WriteLine(HoraVal);
+                    Console.WriteLine(FimVal);
                     continue;
                 }
-                else{
+                else
                     HoraFim = new TimeOnly(int.Parse(FimInput.Substring(0, 2)), int.Parse(FimInput.Substring(2)));
-                    break;
-                } 
-                    
-                    
-            }
 
-            if (consultorio.isHoraOcupada(HoraInicio, HoraFim))
-            {
-                Console.WriteLine("Erro: Hora já está ocupada. Favor selecionar outra data.");
+
+                string HorarioVal = ConsultaValidacoes.validarHorario(consultorio, Data, HoraInicio, HoraFim);
+                if (HorarioVal != "")
+                {
+                    Console.WriteLine(HorarioVal);
+                    continue;
+                }
+                else
+                    break;
             }
-            else
-            {
-                consultorio.AgendarConsulta(CPF, Data, HoraInicio, HoraFim);
-                Console.WriteLine("Consulta agendada com sucesso");
-            }
+            
+            consultorio.AgendarConsulta(CPF, Data, HoraInicio, HoraFim);
+            Console.WriteLine("Consulta agendada com sucesso");
 
         }
     }
