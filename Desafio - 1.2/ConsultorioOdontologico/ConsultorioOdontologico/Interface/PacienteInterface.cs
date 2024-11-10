@@ -27,6 +27,12 @@ namespace ConsultorioOdontologico.Interface
                     case "2":
                         ExcluirPaciente(consultorio);
                         break;
+                    case "3":
+                        ListarPacientes(consultorio, "CPF");
+                        break;
+                    case "4":
+                        ListarPacientes(consultorio, "Nome");
+                        break;
                     case "5":
                         loop = false;
                         break;
@@ -95,6 +101,26 @@ namespace ConsultorioOdontologico.Interface
                 Console.WriteLine("Paciente deletado com sucesso");
             }
                 
+        }
+
+        public static void ListarPacientes(Consultorio consultorio, string ordem)
+        {
+            Console.WriteLine("--------------------------------------------------------------------------");
+            Console.WriteLine("CPF        \tNome                          \tDt.Nasc    \tIdade");
+            Console.WriteLine("--------------------------------------------------------------------------");
+
+            List<Paciente> pacientesOrdenados = consultorio.ListarPacientes(ordem);
+            foreach(Paciente p in pacientesOrdenados)
+            {
+                Console.WriteLine($"{p.CPF}\t{p.Nome.PadRight(30)}\t{p.DataNascimento.ToString("dd/MM/yyyy")}\t{p.Idade}");
+                if (consultorio.existeConsultaFutura(p.CPF))
+                {
+                    Consulta con = consultorio.ListarConsultasFuturas(p.CPF);
+                    Console.WriteLine($"           \tAgendado para: {con.dataConsulta}");
+                    Console.WriteLine($"           \t{con.horaInicio} às {con.horaFim}");
+                }
+            }
+
         }
     }
 }

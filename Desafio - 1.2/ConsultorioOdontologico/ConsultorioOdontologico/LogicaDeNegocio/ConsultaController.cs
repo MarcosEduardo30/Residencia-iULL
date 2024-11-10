@@ -30,5 +30,15 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
             else
                 return false;
         }
+
+        public static Consulta? ListarConsultasFuturas(this Consultorio con, string CPF)
+        {
+            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
+            return con.consultas
+                .Find(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
+        }
+
+
     }
 }

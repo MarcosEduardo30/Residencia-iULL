@@ -32,18 +32,6 @@ namespace ConsultorioOdontologico.Interface
                         break;
                 }
             }
-            Console.WriteLine("\n \n \n \n \n \n \n");
-
-            foreach (Paciente p in consultorio.pacientes)
-            {
-                Console.WriteLine($"CPF: {p.CPF} || Nome: {p.Nome}");
-            }
-
-            foreach(Consulta c in consultorio.consultas)
-            {
-                Console.WriteLine($"CPF Paciente: {c.CPFPaciente} || DataConsulta: {c.dataConsulta} || Hora inicio: {c.horaInicio} || Hora Fim: {c.horaFim}");
-            }
-            
         }
     }
 }

@@ -15,5 +15,18 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
             con.pacientes.RemoveAll(p => p.CPF == CPF);
             con.DeletarConsulta(CPF);
         }
+
+        public static List<Paciente> ListarPacientes(this Consultorio con, string ordem)
+        {
+            if (ordem == "CPF")
+            {
+                return con.pacientes.OrderBy(p => p.CPF).ToList();
+            }
+            else
+            {
+                return con.pacientes.OrderBy(p => p.Nome).ToList();
+            }
+            
+        }
     }
 }
