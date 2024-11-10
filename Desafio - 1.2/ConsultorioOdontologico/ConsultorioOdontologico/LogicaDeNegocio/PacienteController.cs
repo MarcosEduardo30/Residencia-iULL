@@ -28,5 +28,10 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
             }
             
         }
+
+        public static Paciente? ListarPaciente(this Consultorio con, string CPF)
+        {
+            return con.pacientes.Find(p => p.CPF == CPF);
+        }
     }
 }

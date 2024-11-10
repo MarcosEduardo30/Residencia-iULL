@@ -39,6 +39,12 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
                 .Find(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
         }
 
-
+        public static List<Consulta> ListarConsultas(this Consultorio con)
+        {
+            return con.consultas
+                .OrderBy(c => c.dataConsulta)
+                .ThenBy(c => c.horaInicio)
+                .ToList();
+        }
     }
 }

@@ -12,6 +12,13 @@ namespace ConsultorioOdontologico.Entidades
         public DateOnly dataConsulta;
         public TimeOnly horaInicio;
         public TimeOnly horaFim;
+        public TimeSpan TempoConsulta
+        {
+            get
+            {
+                return horaFim - horaInicio;
+            }
+        }
 
         public Consulta(string CPFPaciente, DateOnly data, TimeOnly horaInicio, TimeOnly horaFim)
         {

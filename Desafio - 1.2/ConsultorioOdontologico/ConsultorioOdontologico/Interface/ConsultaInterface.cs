@@ -27,6 +27,9 @@ namespace ConsultorioOdontologico.Interface
                     case "2":
                         CancelarConsulta(consultorio);
                         break;
+                    case "3":
+                        listarConsultas(consultorio);
+                        break;
                     case "4":
                         loop = false;
                         break;
@@ -159,6 +162,42 @@ namespace ConsultorioOdontologico.Interface
                 Console.WriteLine("Erro: agendamento não encontrado");
             }
 
+        }
+
+        public static void listarConsultas(Consultorio consultorio)
+        {
+            string modo;
+            while (true)
+            {
+                Console.Write("Apresentar a agenda T-Toda ou P-Periodo: ");
+                string res = Console.ReadLine();
+                if (res == "T" || res == "P")
+                {
+                    modo = res;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Opção inválida. Favor selecionar novamente");
+                }
+            }
+
+            List<Consulta> consultas = consultorio.ListarConsultas();
+
+            Console.WriteLine("-------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("  Data  \tH.Ini\tH.Fim\tTempo\tNome                          \tDt.Nasc.");
+            Console.WriteLine("-------------------------------------------------------------------------------------------------------");
+            foreach (Consulta cons in consultas)
+            {
+                Paciente pac = consultorio.ListarPaciente(cons.CPFPaciente);
+                Console.WriteLine($"{cons.dataConsulta}" +
+                    $"\t{cons.horaInicio}" +
+                    $"\t{cons.horaFim}" +
+                    $"\t{cons.TempoConsulta.ToString("hh\\:mm")}" +
+                    $"\t{pac.Nome.PadRight(30)}" +
+                    $"\t{pac.DataNascimento.ToString("dd/MM/yyyy")}" );
+            }
+            
         }
     }
 }
