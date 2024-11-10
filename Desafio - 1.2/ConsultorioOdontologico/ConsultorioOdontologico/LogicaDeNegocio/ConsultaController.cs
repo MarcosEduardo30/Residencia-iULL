@@ -1,9 +1,4 @@
 ﻿using ConsultorioOdontologico.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsultorioOdontologico.LogicaDeNegocio
 {
@@ -15,14 +10,25 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
             con.consultas.Add(consulta);
         }
 
-        public static void DeletarConsulta(this Consultorio con, string CPF, string Data, TimeOnly HoraInicio)
+        public static bool DeletarConsulta(this Consultorio con, string CPF, string Data, TimeOnly horaInicio)
         {
-            return;
+            DateOnly dataConsu = DateOnly.Parse(Data);
+            int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF && c.dataConsulta == dataConsu && c.horaInicio == horaInicio);
+
+            if (removidos > 0)
+                return true;
+            else
+                return false;
         }
 
-        public static void DeletarConsulta(this Consultorio con, string CPF)
+        public static bool DeletarConsulta(this Consultorio con, string CPF)
         {
-            con.consultas.RemoveAll(c => c.CPFPaciente == CPF);
+            int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF);
+
+            if (removidos > 0)
+                return true;
+            else
+                return false;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using ConsultorioOdontologico.Entidades;
 using ConsultorioOdontologico.LogicaDeNegocio;
 using ConsultorioOdontologico.LogicaDeNegocio.Validações;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsultorioOdontologico.Interface
 {
@@ -22,6 +23,9 @@ namespace ConsultorioOdontologico.Interface
                 {
                     case "1":
                         AgendarConsulta(consultorio);
+                        break;
+                    case "2":
+                        CancelarConsulta(consultorio);
                         break;
                     case "4":
                         loop = false;
@@ -99,6 +103,61 @@ namespace ConsultorioOdontologico.Interface
             
             consultorio.AgendarConsulta(CPF, Data, HoraInicio, HoraFim);
             Console.WriteLine("Consulta agendada com sucesso");
+
+        }
+    
+        public static void CancelarConsulta(Consultorio consultorio)
+        {
+            TimeOnly horaInicio;
+            string DataInput;
+            ;
+
+            Console.Write("CPF: ");
+            string CPFInput = Console.ReadLine();
+            if (!consultorio.isCPFCadastrado(CPFInput)){
+                Console.WriteLine("Erro: Paciente não cadastrado");
+                return;
+            }
+
+            while (true)
+            {
+                Console.Write("Data da consulta: ");
+                DataInput = Console.ReadLine();
+                string DataVal = Validacoes.isDataFormatValid(DataInput);
+                if (DataVal != "")
+                {
+                    Console.WriteLine(DataVal);
+                    continue;
+                }
+
+                Console.Write("Hora de inicio: ");
+                string HoraInput = Console.ReadLine();
+                string InicioVal = ConsultaValidacoes.isHourFormatValid(HoraInput);
+                if (InicioVal != "")
+                {
+                    Console.WriteLine(InicioVal);
+                    continue;
+                }
+                else
+                    horaInicio = new TimeOnly(int.Parse(HoraInput.Substring(0, 2)), int.Parse(HoraInput.Substring(2)));
+
+                if (!ConsultaValidacoes.isConsultaFutura(DateOnly.Parse(DataInput), horaInicio))
+                {
+                    Console.WriteLine("Erro: Não é possivel cancelar consultas passadas");
+                    continue;
+                }
+                else
+                    break;
+            }
+
+            if (consultorio.DeletarConsulta(CPFInput, DataInput, horaInicio))
+            {
+                Console.WriteLine("Consulta deletada com sucesso");
+            }
+            else
+            {
+                Console.WriteLine("Erro: agendamento não encontrado");
+            }
 
         }
     }

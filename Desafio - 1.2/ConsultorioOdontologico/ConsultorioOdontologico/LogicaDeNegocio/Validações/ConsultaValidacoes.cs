@@ -1,10 +1,4 @@
 ﻿using ConsultorioOdontologico.Entidades;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
 {
@@ -46,6 +40,8 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             DateOnly dataConsulta = DateOnly.Parse(Data);
             if (!isHorarioValido(dataConsulta, horaInicial, horaFinal))
                 return "Erro: Horário selecionado deve ser um horário válido";
+            if (!isConsultaFutura(dataConsulta, horaInicial))
+                return "Erro: Horário selecionado já passou. Por favor selecionar um horário no futuro.";
             if (consultorio.isHoraOcupada(dataConsulta, horaInicial, horaFinal))
                 return "Erro: Já existe uma consulta neste horário. Por favor selecione outro.";
             return "";
@@ -55,7 +51,10 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
         public static bool isHorarioValido(DateOnly dataConsulta, TimeOnly HoraInicial, TimeOnly HoraFinal)
         {
             if (HoraInicial > HoraFinal)
-                return false;
+                return false;            
+            return true;
+        }
+        public static bool isConsultaFutura(DateOnly dataConsulta, TimeOnly HoraInicial) {
             DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
             TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
             if (dataConsulta < dataAtual || (dataConsulta == dataAtual && HoraInicial < horaAtual))
