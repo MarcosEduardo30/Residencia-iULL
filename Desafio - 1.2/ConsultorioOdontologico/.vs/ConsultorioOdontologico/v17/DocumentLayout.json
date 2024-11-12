@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\logicadenegocio\\valida\u00E7\u00F5es\\pacientevalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\logicadenegocio\\valida\u00E7\u00F5es\\pacientevalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\logicadenegocio\\valida\u00E7\u00F5es\\consultavalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\logicadenegocio\\valida\u00E7\u00F5es\\consultavalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\interface\\consultainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\interface\\consultainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\logicadenegocio\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\logicadenegocio\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\interface\\pacienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\interface\\pacienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 1.2\\consultorioodontologico\\consultorioodontologico\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5511F05-4D7B-4E8C-AC74-BBEEBF757E94}|ConsultorioOdontologico\\ConsultorioOdontologico.csproj|solutionrelative:consultorioodontologico\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Program.cs",
-              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Program.cs",
-              "RelativeToolTip": "ConsultorioOdontologico\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Title": "PacienteValidacoes.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T22:53:26.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PacienteInterface.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\PacienteInterface.cs",
-              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Interface\\PacienteInterface.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\PacienteInterface.cs",
-              "RelativeToolTip": "ConsultorioOdontologico\\Interface\\PacienteInterface.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAA3wHIAAABsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T22:43:42.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PacienteController.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\PacienteController.cs",
-              "RelativeDocumentMoniker": "ConsultorioOdontologico\\LogicaDeNegocio\\PacienteController.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\PacienteController.cs",
-              "RelativeToolTip": "ConsultorioOdontologico\\LogicaDeNegocio\\PacienteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T22:37:11.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Consulta.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "RelativeDocumentMoniker": "ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "RelativeToolTip": "ConsultorioOdontologico\\Entidades\\Consulta.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T22:27:10.483Z",
+              "WhenOpened": "2024-11-12T18:09:01.122Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ConsultaValidacoes.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "RelativeDocumentMoniker": "ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "RelativeToolTip": "ConsultorioOdontologico\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\ConsultaValidacoes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T17:54:47.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ConsultaInterface.cs",
               "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
               "RelativeDocumentMoniker": "ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
               "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 1.2\\ConsultorioOdontologico\\ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
               "RelativeToolTip": "ConsultorioOdontologico\\Interface\\ConsultaInterface.cs",
-              "ViewState": "AQIAALMAAAAAAAAAAAAkwMMAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T22:12:09.076Z",
+              "WhenOpened": "2024-11-12T17:54:38.632Z",
               "EditorCaption": ""
             }
           ]

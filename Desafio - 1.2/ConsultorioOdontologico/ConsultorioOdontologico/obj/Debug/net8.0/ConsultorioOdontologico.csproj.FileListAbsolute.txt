@@ -12,3 +12,4 @@ D:\Projects\C#\Residencia-iULL\Desafio - 1.2\ConsultorioOdontologico\Consultorio
 D:\Projects\C#\Residencia-iULL\Desafio - 1.2\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\net8.0\ConsultorioOdontologico.pdb
 D:\Projects\C#\Residencia-iULL\Desafio - 1.2\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\net8.0\ConsultorioOdontologico.genruntimeconfig.cache
 D:\Projects\C#\Residencia-iULL\Desafio - 1.2\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\net8.0\ref\ConsultorioOdontologico.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 1.2\ConsultorioOdontologico\ConsultorioOdontologico\obj\Debug\net8.0\ConsultorioOdontologico.sourcelink.json

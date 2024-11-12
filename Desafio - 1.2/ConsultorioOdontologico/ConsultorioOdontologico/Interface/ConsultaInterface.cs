@@ -144,7 +144,7 @@ namespace ConsultorioOdontologico.Interface
                 else
                     horaInicio = new TimeOnly(int.Parse(HoraInput.Substring(0, 2)), int.Parse(HoraInput.Substring(2)));
 
-                if (!ConsultaValidacoes.isConsultaFutura(DateOnly.Parse(DataInput), horaInicio))
+                if (!ConsultaValidacoes.isDataFutura(DateOnly.Parse(DataInput), horaInicio))
                 {
                     Console.WriteLine("Erro: Não é possivel cancelar consultas passadas");
                     continue;
@@ -182,7 +182,36 @@ namespace ConsultorioOdontologico.Interface
                 }
             }
 
-            List<Consulta> consultas = consultorio.ListarConsultas();
+            List<Consulta> consultas;
+
+            if (modo == "P")
+            {
+                DateOnly dataInicial;
+                DateOnly dataFinal;
+                while (true){
+                    Console.Write("Data inicial: ");
+                    string dtInicialInput = Console.ReadLine();
+                    string dtValid = Validacoes.isDataFormatValid(dtInicialInput);
+
+                    Console.Write("Data final: ");
+                    string dtFinalInput = Console.ReadLine();
+                    dtValid = Validacoes.isDataFormatValid(dtFinalInput);
+
+                    if (dtValid != ""){
+                        Console.WriteLine(dtValid);
+                        continue;
+                    } 
+                    else{
+                        dataInicial = DateOnly.Parse(dtInicialInput);
+                        dataFinal = DateOnly.Parse(dtFinalInput);
+                        break;
+                    }
+                }
+                consultas = consultorio.ListarConsultas(dataInicial, dataFinal);
+            }
+            else {
+                consultas = consultorio.ListarConsultas();
+            }
 
             Console.WriteLine("-------------------------------------------------------------------------------------------------------");
             Console.WriteLine("  Data  \tH.Ini\tH.Fim\tTempo\tNome                          \tDt.Nasc.");

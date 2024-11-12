@@ -46,5 +46,14 @@ namespace ConsultorioOdontologico.LogicaDeNegocio
                 .ThenBy(c => c.horaInicio)
                 .ToList();
         }
+
+        public static List<Consulta> ListarConsultas(this Consultorio con, DateOnly DataInicio, DateOnly DataFim)
+        {
+            return con.consultas
+                .FindAll(c => c.dataConsulta >= DataInicio && c.dataConsulta <= DataFim)
+                .OrderBy(c => c.dataConsulta)
+                .ThenBy(c => c.horaInicio)
+                .ToList();
+        }
     }
 }

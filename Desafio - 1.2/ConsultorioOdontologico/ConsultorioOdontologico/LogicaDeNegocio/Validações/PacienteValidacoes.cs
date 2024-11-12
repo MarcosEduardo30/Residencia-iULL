@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
 {
-    
+    // Classe estática com as validações referentes a interface gráfica e a criação de Pacientes.
     public static class PacienteValidacoes
     {
         public static string validarCPF(Consultorio consultorio, string CPF)

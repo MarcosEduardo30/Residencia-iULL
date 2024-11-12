@@ -4,6 +4,7 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
 {
     public static class ConsultaValidacoes
     {
+        // Classe estática com as validações referentes a interface gráfica e a criação de Consultas.
         public static string validarCPF(Consultorio consultorio, string CPF)
         {
             if (!consultorio.isCPFCadastrado(CPF))
@@ -38,9 +39,9 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
         public static string validarHorario(Consultorio consultorio, string Data, TimeOnly horaInicial, TimeOnly horaFinal)
         {
             DateOnly dataConsulta = DateOnly.Parse(Data);
-            if (!isHorarioValido(dataConsulta, horaInicial, horaFinal))
+            if (!isHorarioValido(horaInicial, horaFinal))
                 return "Erro: Horário selecionado deve ser um horário válido";
-            if (!isConsultaFutura(dataConsulta, horaInicial))
+            if (!isDataFutura(dataConsulta, horaInicial))
                 return "Erro: Horário selecionado já passou. Por favor selecionar um horário no futuro.";
             if (consultorio.isHoraOcupada(dataConsulta, horaInicial, horaFinal))
                 return "Erro: Já existe uma consulta neste horário. Por favor selecione outro.";
@@ -48,13 +49,13 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
 
         }
 
-        public static bool isHorarioValido(DateOnly dataConsulta, TimeOnly HoraInicial, TimeOnly HoraFinal)
+        public static bool isHorarioValido(TimeOnly HoraInicial, TimeOnly HoraFinal)
         {
             if (HoraInicial > HoraFinal)
                 return false;            
             return true;
         }
-        public static bool isConsultaFutura(DateOnly dataConsulta, TimeOnly HoraInicial) {
+        public static bool isDataFutura(DateOnly dataConsulta, TimeOnly HoraInicial) {
             DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
             TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
             if (dataConsulta < dataAtual || (dataConsulta == dataAtual && HoraInicial < horaAtual))
