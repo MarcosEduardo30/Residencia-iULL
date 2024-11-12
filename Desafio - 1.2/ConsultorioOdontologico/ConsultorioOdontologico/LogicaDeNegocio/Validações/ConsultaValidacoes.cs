@@ -4,8 +4,8 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
 {
     public static class ConsultaValidacoes
     {
-        // Classe estática com as validações referentes a interface gráfica e a criação de Consultas.
-        public static string validarCPF(Consultorio consultorio, string CPF)
+        // Classe estática com as validações referentes a interface gráfica e a classe de Consultas.
+        public static string isCpfValid(Consultorio consultorio, string CPF)
         {
             if (!consultorio.isCPFCadastrado(CPF))
                 return "Erro: Não há paciente com o CPF cadastrado";
@@ -14,32 +14,10 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             else
                 return "";
         }
-
-        public static string isHourFormatValid(string hora)
-        {
-            if (hora == null || hora == "") 
-                return "Erro: Hora não pode ser nula.";
-            if (hora.Length != 4) 
-                return "Erro: Hora está em um formato inválido. Por favor colocar a hora no formato HHMM";
-
-            int horas;
-            int minutos;
-
-            if (!int.TryParse(hora.Substring(0, 2), out horas) || !int.TryParse(hora.Substring(2), out minutos))
-                return "Erro: Por favor digite apenas valores numéricos na hora";
-            if ((horas < 08 || horas > 19) || (horas == 19 && minutos > 0))
-                return "Erro: Horário inválido. As consultas devem ser agendadas entre 08:00 e as 19:00";
-            if (minutos < 0 || minutos > 59)
-                return "Erro: Valor de minutos errado.";
-            if (minutos % 15 != 0)
-                return "Erro: Horários devem ser escolhidos em intervalos de 15 em 15 minutos";
-            return "";
-        }
-
-        public static string validarHorario(Consultorio consultorio, string Data, TimeOnly horaInicial, TimeOnly horaFinal)
+        public static string isHorarioValid(Consultorio consultorio, string Data, TimeOnly horaInicial, TimeOnly horaFinal)
         {
             DateOnly dataConsulta = DateOnly.Parse(Data);
-            if (!isHorarioValido(horaInicial, horaFinal))
+            if (horaInicial > horaFinal)
                 return "Erro: Horário selecionado deve ser um horário válido";
             if (!isDataFutura(dataConsulta, horaInicial))
                 return "Erro: Horário selecionado já passou. Por favor selecionar um horário no futuro.";
@@ -48,13 +26,6 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             return "";
 
         }
-
-        public static bool isHorarioValido(TimeOnly HoraInicial, TimeOnly HoraFinal)
-        {
-            if (HoraInicial > HoraFinal)
-                return false;            
-            return true;
-        }
         public static bool isDataFutura(DateOnly dataConsulta, TimeOnly HoraInicial) {
             DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
             TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
@@ -62,15 +33,7 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
                 return false;
             return true;
         }
-        public static bool isHoraOcupada(this Consultorio consultorio, DateOnly dataConsulta, TimeOnly horaInicial, TimeOnly horaFinal)
-        {
-            if (consultorio.consultas.Exists(c => c.dataConsulta == dataConsulta && c.temSobreposicao(horaInicial, horaFinal))) 
-                return true;
-            else 
-                return false;
-        }
-
-        public static bool temSobreposicao(this Consulta consulta, TimeOnly inicio, TimeOnly fim)
+        public static bool temSobreposicaoHorario(this Consulta consulta, TimeOnly inicio, TimeOnly fim)
         {
             if (consulta.horaInicio >= inicio && consulta.horaInicio <= fim) return true;
             else if (consulta.horaFim >= inicio && consulta.horaFim <= fim) return true;

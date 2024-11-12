@@ -12,7 +12,8 @@ namespace ConsultorioOdontologico.Entidades
         public string Nome;
         public DateTime DataNascimento;
         public int Idade { 
-            get {
+            get 
+            {
                 DateTime dataAtual = DateTime.Now;
                 if (DataNascimento.Month > dataAtual.Month)
                     return dataAtual.Year - DataNascimento.Year;

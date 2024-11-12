@@ -51,7 +51,7 @@ namespace ConsultorioOdontologico.Interface
             {
                 Console.Write("CPF: ");
                 CPF = Console.ReadLine().Trim();
-                string CPFVal = ConsultaValidacoes.validarCPF(consultorio, CPF);
+                string CPFVal = ConsultaValidacoes.isCpfValid(consultorio, CPF);
                 if (CPFVal != "")
                 {
                     Console.WriteLine(CPFVal);
@@ -73,7 +73,7 @@ namespace ConsultorioOdontologico.Interface
 
                 Console.Write("Hora Inicial: ");
                 string InicioInput = Console.ReadLine().Trim();
-                string InicioVal = ConsultaValidacoes.isHourFormatValid(InicioInput);
+                string InicioVal = Validacoes.isHourFormatValid(InicioInput);
                 if (InicioVal != "")
                 {
                     Console.WriteLine(InicioVal);
@@ -84,7 +84,7 @@ namespace ConsultorioOdontologico.Interface
 
                 Console.Write("Hora Final: ");
                 string FimInput = Console.ReadLine().Trim();
-                string FimVal = ConsultaValidacoes.isHourFormatValid(FimInput);
+                string FimVal = Validacoes.isHourFormatValid(FimInput);
                 if (FimVal != "")
                 {
                     Console.WriteLine(FimVal);
@@ -94,7 +94,7 @@ namespace ConsultorioOdontologico.Interface
                     HoraFim = new TimeOnly(int.Parse(FimInput.Substring(0, 2)), int.Parse(FimInput.Substring(2)));
 
 
-                string HorarioVal = ConsultaValidacoes.validarHorario(consultorio, Data, HoraInicio, HoraFim);
+                string HorarioVal = ConsultaValidacoes.isHorarioValid(consultorio, Data, HoraInicio, HoraFim);
                 if (HorarioVal != "")
                 {
                     Console.WriteLine(HorarioVal);
@@ -135,7 +135,7 @@ namespace ConsultorioOdontologico.Interface
 
                 Console.Write("Hora de inicio: ");
                 string HoraInput = Console.ReadLine();
-                string InicioVal = ConsultaValidacoes.isHourFormatValid(HoraInput);
+                string InicioVal = Validacoes.isHourFormatValid(HoraInput);
                 if (InicioVal != "")
                 {
                     Console.WriteLine(InicioVal);

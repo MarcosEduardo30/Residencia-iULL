@@ -52,7 +52,7 @@ namespace ConsultorioOdontologico.Interface
             while (true) {
                 Console.Write("CPF: ");
                 CPF = Console.ReadLine().Trim();
-                string CPFVal = PacienteValidacoes.validarCPF(consultorio, CPF);
+                string CPFVal = PacienteValidacoes.isCpfValid(consultorio, CPF);
                 if (CPFVal != ""){
                     Console.WriteLine(CPFVal);
                     continue;

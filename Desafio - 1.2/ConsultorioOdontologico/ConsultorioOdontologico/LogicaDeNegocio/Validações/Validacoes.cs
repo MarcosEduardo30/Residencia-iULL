@@ -4,23 +4,7 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
 {
     public static class Validacoes
     {
-        public static bool isCPFCadastrado(this Consultorio consultorio, string CPF)
-        {
-            if (consultorio.pacientes.Exists(p => p.CPF == CPF)) return true;
-            else return false;
-        }
-
-        public static bool existeConsultaFutura(this Consultorio consultorio, string CPF)
-        {
-            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
-            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
-            bool existeConsulta = consultorio.consultas
-                .Exists(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
-            if (existeConsulta)
-                return true;
-            else
-                return false;
-        }
+        //Classe estática com validações genéricas utilizadas por ambas as interfaces de Paciente e de Consulta.
         public static string isDataFormatValid(string data)
         {
             string[] subData = data.Split('/');
@@ -59,7 +43,26 @@ namespace ConsultorioOdontologico.LogicaDeNegocio.Validações
             else 
                 return "";
         }
-    
-    
+
+        public static string isHourFormatValid(string hora)
+        {
+            if (hora == null || hora == "")
+                return "Erro: Hora não pode ser nula.";
+            if (hora.Length != 4)
+                return "Erro: Hora está em um formato inválido. Por favor colocar a hora no formato HHMM";
+
+            int horas;
+            int minutos;
+
+            if (!int.TryParse(hora.Substring(0, 2), out horas) || !int.TryParse(hora.Substring(2), out minutos))
+                return "Erro: Por favor digite apenas valores numéricos na hora";
+            if ((horas < 08 || horas > 19) || (horas == 19 && minutos > 0))
+                return "Erro: Horário inválido. As consultas devem ser agendadas entre 08:00 e as 19:00";
+            if (minutos < 0 || minutos > 59)
+                return "Erro: Valor de minutos errado.";
+            if (minutos % 15 != 0)
+                return "Erro: Horários devem ser escolhidos em intervalos de 15 em 15 minutos";
+            return "";
+        }
     }
 }
