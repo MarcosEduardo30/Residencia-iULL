@@ -9,7 +9,7 @@ namespace ConversorDeMoedas.LogicaDeNegocio
 {
     public static class ConversaoMoedasController
     {
-        public static List<string> ValidarConversaoMoedas(string MoedaOrigem, float ValorOrigem, string MoedaDestino)
+        public static List<string> ValidarConversaoMoedas(string MoedaOrigem, double ValorOrigem, string MoedaDestino)
         {
             List<string> erros = [];
             if (MoedaOrigem.Length != 3 || MoedaDestino.Length != 3)
@@ -21,9 +21,12 @@ namespace ConversorDeMoedas.LogicaDeNegocio
             return erros;
         }
 
-        public static void ConverterMoedas()
+        public static async Task<MoedaConvertida> ConverterMoedas(string MoedaOrigem, double ValorOrigem, string MoedaDestino)
         {
-
+            Conversor conv = await ConversorController.CriaConversor(MoedaOrigem);
+            double taxa = conv.getTaxa(MoedaDestino);
+            double valorConvertido = ValorOrigem * taxa;
+            return new MoedaConvertida(MoedaOrigem, ValorOrigem, MoedaDestino, valorConvertido, taxa);
         }
     }
 }

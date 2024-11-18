@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\logicadenegocio\\conversaomoedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\logicadenegocio\\conversaomoedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\entidades\\conversor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\entidades\\conversor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\entidades\\moedaconvertida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\entidades\\moedaconvertida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\logicadenegocio\\conversorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\logicadenegocio\\conversorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\logicadenegocio\\conversaomoedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\logicadenegocio\\conversaomoedascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\entidades\\conversor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\entidades\\conversor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\entidades\\taxasdeconversao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\entidades\\taxasdeconversao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 2.1\\conversordemoedas\\conversordemoedas\\interfaces\\conversorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27488746-C726-42EC-8CC9-3224447DB058}|ConversorDeMoedas\\ConversorDeMoedas.csproj|solutionrelative:conversordemoedas\\interfaces\\conversorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -40,61 +40,61 @@
               "RelativeDocumentMoniker": "ConversorDeMoedas\\LogicaDeNegocio\\ConversorController.cs",
               "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\LogicaDeNegocio\\ConversorController.cs",
               "RelativeToolTip": "ConversorDeMoedas\\LogicaDeNegocio\\ConversorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAPAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T22:26:00.763Z",
+              "WhenOpened": "2024-11-18T22:53:32.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConversorView.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Interfaces\\ConversorView.cs",
+              "RelativeDocumentMoniker": "ConversorDeMoedas\\Interfaces\\ConversorView.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Interfaces\\ConversorView.cs",
+              "RelativeToolTip": "ConversorDeMoedas\\Interfaces\\ConversorView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:51:55.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MoedaConvertida.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Entidades\\MoedaConvertida.cs",
+              "RelativeDocumentMoniker": "ConversorDeMoedas\\Entidades\\MoedaConvertida.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Entidades\\MoedaConvertida.cs",
+              "RelativeToolTip": "ConversorDeMoedas\\Entidades\\MoedaConvertida.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:51:26.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Conversor.cs",
               "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Entidades\\Conversor.cs",
               "RelativeDocumentMoniker": "ConversorDeMoedas\\Entidades\\Conversor.cs",
               "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Entidades\\Conversor.cs",
               "RelativeToolTip": "ConversorDeMoedas\\Entidades\\Conversor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T22:25:36.222Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ConversaoMoedasController.cs",
               "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\LogicaDeNegocio\\ConversaoMoedasController.cs",
               "RelativeDocumentMoniker": "ConversorDeMoedas\\LogicaDeNegocio\\ConversaoMoedasController.cs",
               "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\LogicaDeNegocio\\ConversaoMoedasController.cs",
               "RelativeToolTip": "ConversorDeMoedas\\LogicaDeNegocio\\ConversaoMoedasController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T22:25:26.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Program.cs",
-              "RelativeDocumentMoniker": "ConversorDeMoedas\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Program.cs",
-              "RelativeToolTip": "ConversorDeMoedas\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T22:17:31.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TaxasDeConversao.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Entidades\\TaxasDeConversao.cs",
-              "RelativeDocumentMoniker": "ConversorDeMoedas\\Entidades\\TaxasDeConversao.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 2.1\\ConversorDeMoedas\\ConversorDeMoedas\\Entidades\\TaxasDeConversao.cs",
-              "RelativeToolTip": "ConversorDeMoedas\\Entidades\\TaxasDeConversao.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA4wDwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T22:21:42.241Z",
               "EditorCaption": ""
             }
           ]

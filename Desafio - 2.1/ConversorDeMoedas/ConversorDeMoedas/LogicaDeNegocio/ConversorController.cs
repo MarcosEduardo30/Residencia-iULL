@@ -13,5 +13,20 @@ namespace ConversorDeMoedas.LogicaDeNegocio
             var conversor = await JsonSerializer.DeserializeAsync<Conversor>(stream);
             return conversor;
         }
+
+        public static double getTaxa(this Conversor conversor, string moedaDestino)
+        {
+            switch (moedaDestino)
+            {
+                case "USD":
+                    return conversor.Taxas.USD;
+                case "BRL":
+                    return conversor.Taxas.BRL;
+                case "AED":
+                    return conversor.Taxas.AED;
+                default:
+                    return 0;
+            }
+        }
     }
 }

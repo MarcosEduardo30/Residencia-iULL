@@ -13,7 +13,7 @@ namespace ConversorDeMoedas.Interfaces
         {
             string origemInput;
             string destinoInput;
-            float valorOrigem;
+            double valorOrigem;
 
             while (true) {
                 Console.Write("Moeda Origem: ");
@@ -28,7 +28,7 @@ namespace ConversorDeMoedas.Interfaces
                     Console.Write("Valor: ");
                     string valorInput = Console.ReadLine();
 
-                    if (!float.TryParse(valorInput, out valorOrigem))
+                    if (!double.TryParse(valorInput, out valorOrigem))
                         Console.WriteLine("Favor digitar apenas valores numéricos");
                     else
                         break;
