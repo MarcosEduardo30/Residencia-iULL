@@ -1,0 +1,15 @@
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\bin\Debug\net8.0\ConversorDeMoedas.exe
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\bin\Debug\net8.0\ConversorDeMoedas.deps.json
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\bin\Debug\net8.0\ConversorDeMoedas.runtimeconfig.json
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\bin\Debug\net8.0\ConversorDeMoedas.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\bin\Debug\net8.0\ConversorDeMoedas.pdb
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.AssemblyInfoInputs.cache
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.AssemblyInfo.cs
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.csproj.CoreCompileInputs.cache
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.sourcelink.json
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\refint\ConversorDeMoedas.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.pdb
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ConversorDeMoedas.genruntimeconfig.cache
+D:\Projects\C#\Residencia-iULL\Desafio - 2.1\ConversorDeMoedas\ConversorDeMoedas\obj\Debug\net8.0\ref\ConversorDeMoedas.dll
