@@ -9,10 +9,7 @@ namespace ConversorDeMoedas
     {
         public static async Task Main(string[] args)
         {
-            var teste = await ConversorController.CriaConversor("USD");
-            Console.WriteLine(teste.MoedaOrigem);
-            Console.WriteLine(teste.Taxas.BRL);
-            // ConversorView.ConverterValores();
+            await ConversorView.ConverterValores();
         }
     }
 }

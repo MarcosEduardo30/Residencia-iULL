@@ -1,4 +1,5 @@
-﻿using ConversorDeMoedas.LogicaDeNegocio;
+﻿using ConversorDeMoedas.Entidades;
+using ConversorDeMoedas.LogicaDeNegocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace ConversorDeMoedas.Interfaces
 {
     public class ConversorView
     {
-        public static void ConverterValores()
+        public static async Task ConverterValores()
         {
             string origemInput;
             string destinoInput;
@@ -42,7 +43,10 @@ namespace ConversorDeMoedas.Interfaces
                     continue;
                 }
 
+                MoedaConvertida moedaConvertida = await ConversaoMoedasController.ConverterMoedas(origemInput, valorOrigem, destinoInput);
 
+                Console.WriteLine($"{moedaConvertida.MoedaOrigem} {moedaConvertida.ValorOrigem} => {moedaConvertida.MoedaDestino} {moedaConvertida.ValorDestino}");
+                Console.WriteLine($"Taxa: {moedaConvertida.Taxa}");
             }
 
 
