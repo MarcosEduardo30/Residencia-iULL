@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConversorDeMoedas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbe2707c2989aa8339f9a82a7cd5bf991df6b1b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8999353643e212bf85d71e091cde8f0164cca433")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConversorDeMoedas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConversorDeMoedas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
