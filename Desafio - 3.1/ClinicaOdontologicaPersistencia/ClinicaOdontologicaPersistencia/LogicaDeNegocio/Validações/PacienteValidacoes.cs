@@ -81,7 +81,6 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
                 return "Erro: O paciente deve possuir mais de 13 anos";
         }
 
-        //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Consulta
         public static string isPacienteDeleteValid(string CPF)
         {
             if (!isCPFCadastrado(CPF))

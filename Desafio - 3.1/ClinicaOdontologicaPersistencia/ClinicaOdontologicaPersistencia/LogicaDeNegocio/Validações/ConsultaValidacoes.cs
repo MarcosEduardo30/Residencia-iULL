@@ -8,7 +8,6 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
         static readonly PacienteController PacCon = new PacienteController();
         static readonly ConsultaController ConsulCon = new ConsultaController();
 
-        //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Paciente
         public static string isCpfValid(string CPF)
         {
             if (!PacienteValidacoes.isCPFCadastrado(CPF))
@@ -38,7 +37,6 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
             return true;
         }
 
-        //Não esquecer de refatorar esse cara
         public static bool temSobreposicaoHorario(this Consulta consulta, TimeOnly inicio, TimeOnly fim)
         {
             if (consulta.horaInicio >= inicio && consulta.horaInicio <= fim) return true;
