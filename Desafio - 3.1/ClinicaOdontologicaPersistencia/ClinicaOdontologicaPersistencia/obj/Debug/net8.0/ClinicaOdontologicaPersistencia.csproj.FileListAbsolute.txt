@@ -117,3 +117,10 @@ D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\Cli
 D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.csproj.AssemblyReference.cache
 D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaO.478F8A15.Up2Date
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\appsettings.json
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
