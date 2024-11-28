@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 namespace ClinicaOdontologicaPersistencia.Entidades
 {
     public class Paciente
     {
-        public string CPF;
-        public string Nome;
-        public DateTime DataNascimento;
+        [Key] 
+        public string CPF { get; set; }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
 
         [NotMapped]
         public int Idade
@@ -20,14 +20,6 @@ namespace ClinicaOdontologicaPersistencia.Entidades
                 else
                     return dataAtual.Year - DataNascimento.Year - 1;
             }
-        }
-
-
-        public Paciente(string CPF, string Nome, DateTime DataNascimento)
-        {
-            this.CPF = CPF;
-            this.Nome = Nome;
-            this.DataNascimento = DataNascimento;
         }
     }
 }

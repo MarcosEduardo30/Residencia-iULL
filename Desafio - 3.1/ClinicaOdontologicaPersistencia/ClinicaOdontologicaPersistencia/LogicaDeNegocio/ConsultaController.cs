@@ -6,8 +6,8 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
     {
         public static void AgendarConsulta(this Consultorio con, string CPF, string Data, TimeOnly HoraInicio, TimeOnly HoraFim)
         {
-            Consulta consulta = new Consulta(CPF, DateOnly.Parse(Data), HoraInicio, HoraFim);
-            con.consultas.Add(consulta);
+            //Consulta consulta = new Consulta(CPF, DateOnly.Parse(Data), HoraInicio, HoraFim);
+            //con.consultas.Add(consulta);
         }
 
         public static bool DeletarConsulta(this Consultorio con, string CPF, string Data, TimeOnly horaInicio)

@@ -6,8 +6,8 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
     {
         public static void incluirPaciente(this Consultorio con, string CPF, string Nome, DateTime DataNascimento)
         {
-            Paciente paciente = new Paciente(CPF, Nome, DataNascimento);
-            con.pacientes.Add(paciente);
+            //Paciente paciente = new Paciente(CPF, Nome, DataNascimento);
+            //con.pacientes.Add(paciente);
         }
 
         public static void DeletarPaciente(this Consultorio con, string CPF)

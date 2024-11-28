@@ -9,10 +9,11 @@ namespace ClinicaOdontologicaPersistencia.Entidades
 {
     public class Consulta
     {
-        public string CPFPaciente;
-        public DateOnly dataConsulta;
-        public TimeOnly horaInicio;
-        public TimeOnly horaFim;
+        public int Id { get; set; }
+        public string CPFPaciente { get; set; }
+        public DateOnly dataConsulta { get; set; }
+        public TimeOnly horaInicio { get; set; }
+        public TimeOnly horaFim { get; set; }
 
         [NotMapped]
         public TimeSpan TempoConsulta
@@ -22,14 +23,5 @@ namespace ClinicaOdontologicaPersistencia.Entidades
                 return horaFim - horaInicio;
             }
         }
-
-        public Consulta(string CPFPaciente, DateOnly data, TimeOnly horaInicio, TimeOnly horaFim)
-        {
-            this.CPFPaciente = CPFPaciente;
-            this.dataConsulta = data;
-            this.horaInicio = horaInicio;
-            this.horaFim = horaFim;
-        }
-
     }
 }
