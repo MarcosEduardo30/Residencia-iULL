@@ -7,6 +7,7 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
         // Classe estática com as validações referentes a interface gráfica e a classe de Consultas.
         static readonly PacienteController PacCon = new PacienteController();
         static readonly ConsultaController ConsulCon = new ConsultaController();
+
         //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Paciente
         public static string isCpfValid(string CPF)
         {
@@ -49,24 +50,23 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
 
         public static bool existeConsultaFutura(string CPF)
         {
-            //DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
-            //TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
-            //bool existeConsulta = consultorio.consultas
-            //    .Exists(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
-            //if (existeConsulta)
-            //    return true;
-            //else
-            //    return false;
-            return true;
+            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
+            Consulta? consultaFutura = ConsulCon.ListarConsultasFuturas(CPF);
+
+            if (consultaFutura != null)
+                return true;
+            else
+                return false;
         }
 
         public static bool isHoraOcupada(DateOnly dataConsulta, TimeOnly horaInicial, TimeOnly horaFinal)
         {
-            //if (consultorio.consultas.Exists(c => c.dataConsulta == dataConsulta && c.temSobreposicaoHorario(horaInicial, horaFinal)))
-            //    return true;
-            //else
-            //    return false;
-            return true;
+            List<Consulta> consultas = ConsulCon.ListarConsultas();
+            if (consultas.Exists(c => c.dataConsulta == dataConsulta && c.temSobreposicaoHorario(horaInicial, horaFinal)))
+                return true;
+            else
+                return false;
         }
     }
 }

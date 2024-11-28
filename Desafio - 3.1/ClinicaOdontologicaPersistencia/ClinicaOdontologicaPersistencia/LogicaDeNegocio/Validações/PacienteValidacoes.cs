@@ -84,7 +84,7 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
         //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Consulta
         public static string isPacienteDeleteValid(string CPF)
         {
-            if (isCPFCadastrado(CPF))
+            if (!isCPFCadastrado(CPF))
                 return "Erro: CPF não cadastrado";
             if (ConsultaValidacoes.existeConsultaFutura(CPF))
                 return "Erro: Paciente possui uma consulta futura. Não foi possível a exclusão.";
@@ -93,9 +93,9 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
 
         public static bool isCPFCadastrado(string CPF)
         {
-            //if (consultorio.pacientes.Exists(p => p.CPF == CPF)) return true;
-            //else return false;
-            return true;
+            Paciente? pacientes = PacCon.ListarPaciente(CPF);
+            if (pacientes != null) return true;
+            else return false;
         }
     }
 }
