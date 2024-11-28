@@ -23,5 +23,12 @@ namespace ClinicaOdontologicaPersistencia.Entidades
                     return dataAtual.Year - DataNascimento.Year - 1;
             }
         }
+
+        public Paciente(string CPF, string Nome, DateTime DataNascimento)
+        {
+            this.CPF = CPF;
+            this.Nome = Nome;
+            this.DataNascimento = DataNascimento;
+        }
     }
 }

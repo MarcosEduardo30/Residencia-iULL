@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\data\\consultoriocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\data\\consultoriocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\logicadenegocio\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\logicadenegocio\\consultacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\logicadenegocio\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\logicadenegocio\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\interface\\consultainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\interface\\consultainterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\interface\\pacienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\interface\\pacienteinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\logicadenegocio\\valida\u00E7\u00F5es\\pacientevalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\logicadenegocio\\valida\u00E7\u00F5es\\pacientevalidacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|d:\\projects\\c#\\residencia-iull\\desafio - 3.1\\clinicaodontologicapersistencia\\clinicaodontologicapersistencia\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E12F667-B5F1-4B26-963A-C1C99A59F8F9}|ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia.csproj|solutionrelative:clinicaodontologicapersistencia\\entidades\\consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConsultorioContext.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Data\\ConsultorioContext.cs",
-              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\Data\\ConsultorioContext.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Data\\ConsultorioContext.cs",
-              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\Data\\ConsultorioContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "DocumentIndex": 2,
+              "Title": "Consulta.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Entidades\\Consulta.cs",
+              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\Entidades\\Consulta.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Entidades\\Consulta.cs",
+              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\Entidades\\Consulta.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T17:04:23.076Z",
+              "WhenOpened": "2024-11-28T17:30:55.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsultaController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\ConsultaController.cs",
+              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\ConsultaController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\ConsultaController.cs",
+              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\ConsultaController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAA7wE4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T17:30:38.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Program.cs",
-              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\Program.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Program.cs",
-              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\PacienteController.cs",
+              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\PacienteController.cs",
+              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\PacienteController.cs",
+              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\PacienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T17:03:55.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PacienteValidacoes.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
-              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
-              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\LogicaDeNegocio\\Valida\u00E7\u00F5es\\PacienteValidacoes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T17:03:05.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PacienteInterface.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Interface\\PacienteInterface.cs",
-              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\Interface\\PacienteInterface.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Interface\\PacienteInterface.cs",
-              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\Interface\\PacienteInterface.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwG8AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T16:59:17.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConsultaInterface.cs",
-              "DocumentMoniker": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Interface\\ConsultaInterface.cs",
-              "RelativeDocumentMoniker": "ClinicaOdontologicaPersistencia\\Interface\\ConsultaInterface.cs",
-              "ToolTip": "D:\\Projects\\C#\\Residencia-iULL\\Desafio - 3.1\\ClinicaOdontologicaPersistencia\\ClinicaOdontologicaPersistencia\\Interface\\ConsultaInterface.cs",
-              "RelativeToolTip": "ClinicaOdontologicaPersistencia\\Interface\\ConsultaInterface.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKkAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T16:58:58.671Z",
+              "WhenOpened": "2024-11-28T17:11:55.086Z",
               "EditorCaption": ""
             }
           ]

@@ -12,61 +12,71 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
         }
         public void AgendarConsulta(string CPF, string Data, TimeOnly HoraInicio, TimeOnly HoraFim)
         {
-            //Consulta consulta = new Consulta(CPF, DateOnly.Parse(Data), HoraInicio, HoraFim);
-            //con.consultas.Add(consulta);
+
+            Consulta consulta = new Consulta(CPF, DateOnly.Parse(Data), HoraInicio, HoraFim);
+            dbContext.Consultas.Add(consulta);
+            dbContext.SaveChanges();
         }
 
         public bool DeletarConsulta(string CPF, string Data, TimeOnly horaInicio)
         {
-            //DateOnly dataConsu = DateOnly.Parse(Data);
-            //int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF && c.dataConsulta == dataConsu && c.horaInicio == horaInicio);
+            DateOnly dataConsu = DateOnly.Parse(Data);
 
-            //if (removidos > 0)
-            //    return true;
-            //else
-            //    return false;
+            List<Consulta> toBeRemoved = dbContext.Consultas
+                .Where(c => c.CPFPaciente == CPF && c.dataConsulta == dataConsu && c.horaInicio == horaInicio)
+                .ToList();
+            int removidos = toBeRemoved.Count();
 
-            return true;
+            dbContext.Consultas.RemoveRange(toBeRemoved);
+            dbContext.SaveChanges();
+
+            if (removidos > 0)
+                return true;
+            else
+                return false;
         }
 
         public bool DeletarConsulta(string CPF)
         {
-            //int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF);
+            List<Consulta> toBeRemoved = dbContext.Consultas
+                .Where(c => c.CPFPaciente == CPF)
+                .ToList();
+            int removidos = toBeRemoved.Count();
 
-            //if (removidos > 0)
-            //    return true;
-            //else
-            //    return false;
+            dbContext.Consultas.RemoveRange(toBeRemoved);
+            dbContext.SaveChanges();
 
-            return true;
+            if (removidos > 0)
+                return true;
+            else
+                return false;
         }
 
         public Consulta? ListarConsultasFuturas(string CPF)
         {
-            //DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
-            //TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
-            //return con.consultas
-            //    .Find(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
-            return new Consulta();
+            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
+            return dbContext.Consultas
+                .FirstOrDefault(c => c.CPFPaciente == CPF 
+                                && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
+
         }
 
         public List<Consulta> ListarConsultas()
         {
-            //return con.consultas
-            //    .OrderBy(c => c.dataConsulta)
-            //    .ThenBy(c => c.horaInicio)
-            //    .ToList();
-            return new List<Consulta>();
+            return dbContext.Consultas
+                .OrderBy(c => c.dataConsulta)
+                .ThenBy(c => c.horaInicio)
+                .ToList();
         }
 
         public List<Consulta> ListarConsultas(DateOnly DataInicio, DateOnly DataFim)
         {
-            //return con.consultas
-            //    .FindAll(c => c.dataConsulta >= DataInicio && c.dataConsulta <= DataFim)
-            //    .OrderBy(c => c.dataConsulta)
-            //    .ThenBy(c => c.horaInicio)
-            //    .ToList();
-            return new List<Consulta>();
+            return dbContext.Consultas
+                .Where(c => c.dataConsulta >= DataInicio && c.dataConsulta <= DataFim)
+                .OrderBy(c => c.dataConsulta)
+                .ThenBy(c => c.horaInicio)
+                .ToList();
         }
     }
 }
