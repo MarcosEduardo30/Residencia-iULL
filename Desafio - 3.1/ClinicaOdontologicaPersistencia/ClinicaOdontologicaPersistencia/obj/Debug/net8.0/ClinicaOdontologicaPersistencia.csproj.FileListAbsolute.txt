@@ -1,0 +1,15 @@
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.AssemblyInfoInputs.cache
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.AssemblyInfo.cs
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.csproj.CoreCompileInputs.cache
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.sourcelink.json
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\ClinicaOdontologicaPersistencia.exe
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\ClinicaOdontologicaPersistencia.deps.json
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\ClinicaOdontologicaPersistencia.runtimeconfig.json
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\ClinicaOdontologicaPersistencia.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\bin\Debug\net8.0\ClinicaOdontologicaPersistencia.pdb
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\refint\ClinicaOdontologicaPersistencia.dll
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.pdb
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ClinicaOdontologicaPersistencia.genruntimeconfig.cache
+D:\Projects\C#\Residencia-iULL\Desafio - 3.1\ClinicaOdontologicaPersistencia\ClinicaOdontologicaPersistencia\obj\Debug\net8.0\ref\ClinicaOdontologicaPersistencia.dll
