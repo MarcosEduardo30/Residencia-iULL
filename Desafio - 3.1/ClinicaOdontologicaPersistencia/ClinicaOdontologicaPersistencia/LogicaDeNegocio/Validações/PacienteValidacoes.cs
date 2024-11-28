@@ -5,7 +5,9 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
     // Classe estática com as validações referentes a interface gráfica e a classe de Pacientes.
     public static class PacienteValidacoes
     {
-        public static string isCpfValid(Consultorio consultorio, string CPF)
+        static readonly PacienteController PacCon = new PacienteController();
+        static readonly ConsultaController ConsulCon = new ConsultaController();
+        public static string isCpfValid(string CPF)
         {
             if (CPF == null || CPF == "")  
                 return "Erro: CPF não pode ser nulo";
@@ -13,7 +15,7 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
                 return "Erro: Favor digitar apenas números no CPF";
             if (CPF.Length != 11 || isAllNumbersTheSame(CPF) || !isDigitoVerificadorValid(10, CPF) || !isDigitoVerificadorValid(11, CPF)) 
                 return "Erro: CPF Inválido!";
-            if (consultorio.isCPFCadastrado(CPF)) 
+            if (isCPFCadastrado(CPF)) 
                 return "Erro: CPF já cadastrado!";
             return "";
         }
@@ -78,13 +80,22 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
             else 
                 return "Erro: O paciente deve possuir mais de 13 anos";
         }
-        public static string isPacienteDeleteValid(Consultorio consultorio, string CPF)
+
+        //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Consulta
+        public static string isPacienteDeleteValid(string CPF)
         {
-            if (!consultorio.isCPFCadastrado(CPF))
+            if (isCPFCadastrado(CPF))
                 return "Erro: CPF não cadastrado";
-            if (consultorio.existeConsultaFutura(CPF))
+            if (ConsultaValidacoes.existeConsultaFutura(CPF))
                 return "Erro: Paciente possui uma consulta futura. Não foi possível a exclusão.";
             return "";
+        }
+
+        public static bool isCPFCadastrado(string CPF)
+        {
+            //if (consultorio.pacientes.Exists(p => p.CPF == CPF)) return true;
+            //else return false;
+            return true;
         }
     }
 }

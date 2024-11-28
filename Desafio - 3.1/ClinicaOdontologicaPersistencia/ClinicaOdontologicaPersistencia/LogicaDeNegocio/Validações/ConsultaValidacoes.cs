@@ -5,23 +5,26 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
     public static class ConsultaValidacoes
     {
         // Classe estática com as validações referentes a interface gráfica e a classe de Consultas.
-        public static string isCpfValid(Consultorio consultorio, string CPF)
+        static readonly PacienteController PacCon = new PacienteController();
+        static readonly ConsultaController ConsulCon = new ConsultaController();
+        //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Paciente
+        public static string isCpfValid(string CPF)
         {
-            if (!consultorio.isCPFCadastrado(CPF))
+            if (PacienteValidacoes.isCPFCadastrado(CPF))
                 return "Erro: Não há paciente com o CPF cadastrado";
-            if (consultorio.existeConsultaFutura(CPF))
+            if (existeConsultaFutura(CPF))
                 return "Erro: paciente já possui uma consulta marcada";
             else
                 return "";
         }
-        public static string isHorarioValid(Consultorio consultorio, string Data, TimeOnly horaInicial, TimeOnly horaFinal)
+        public static string isHorarioValid(string Data, TimeOnly horaInicial, TimeOnly horaFinal)
         {
             DateOnly dataConsulta = DateOnly.Parse(Data);
             if (horaInicial > horaFinal)
                 return "Erro: Horário selecionado deve ser um horário válido";
             if (!isDataFutura(dataConsulta, horaInicial))
                 return "Erro: Horário selecionado já passou. Por favor selecionar um horário no futuro.";
-            if (consultorio.isHoraOcupada(dataConsulta, horaInicial, horaFinal))
+            if (isHoraOcupada(dataConsulta, horaInicial, horaFinal))
                 return "Erro: Já existe uma consulta neste horário. Por favor selecione outro.";
             return "";
 
@@ -33,6 +36,8 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
                 return false;
             return true;
         }
+
+        //Não esquecer de refatorar esse cara
         public static bool temSobreposicaoHorario(this Consulta consulta, TimeOnly inicio, TimeOnly fim)
         {
             if (consulta.horaInicio >= inicio && consulta.horaInicio <= fim) return true;
@@ -40,6 +45,28 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
             else if (inicio >= consulta.horaInicio && inicio <= consulta.horaFim) return true;
             else if (fim >= consulta.horaInicio && fim <= consulta.horaFim) return true;
             else return false;
+        }
+
+        public static bool existeConsultaFutura(string CPF)
+        {
+            //DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
+            //TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
+            //bool existeConsulta = consultorio.consultas
+            //    .Exists(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
+            //if (existeConsulta)
+            //    return true;
+            //else
+            //    return false;
+            return true;
+        }
+
+        public static bool isHoraOcupada(DateOnly dataConsulta, TimeOnly horaInicial, TimeOnly horaFinal)
+        {
+            //if (consultorio.consultas.Exists(c => c.dataConsulta == dataConsulta && c.temSobreposicaoHorario(horaInicial, horaFinal)))
+            //    return true;
+            //else
+            //    return false;
+            return true;
         }
     }
 }

@@ -7,6 +7,8 @@ namespace ClinicaOdontologicaPersistencia.Entidades
         [Key] 
         public string CPF { get; set; }
         public string Nome { get; set; }
+
+        [Column(TypeName = "timestamp(6)")]
         public DateTime DataNascimento { get; set; }
 
         [NotMapped]

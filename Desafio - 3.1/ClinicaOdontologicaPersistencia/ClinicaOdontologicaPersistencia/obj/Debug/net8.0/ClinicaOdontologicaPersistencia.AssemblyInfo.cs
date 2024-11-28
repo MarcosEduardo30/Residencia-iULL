@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicaOdontologicaPersistencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee99a1f14121bc707ceb584a4ab7a3aebc8bc8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04dadd4f22bdf0bcf7359e58941bb4a6225dc50e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicaOdontologicaPersistencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicaOdontologicaPersistencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

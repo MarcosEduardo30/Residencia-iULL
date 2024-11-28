@@ -1,59 +1,72 @@
-﻿using ClinicaOdontologicaPersistencia.Entidades;
+﻿using ClinicaOdontologicaPersistencia.Data;
+using ClinicaOdontologicaPersistencia.Entidades;
 
 namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
 {
-    public static class ConsultaController
+    public class ConsultaController
     {
-        public static void AgendarConsulta(this Consultorio con, string CPF, string Data, TimeOnly HoraInicio, TimeOnly HoraFim)
+        ConsultorioContext dbContext;
+        public ConsultaController()
+        {
+            dbContext = new ConsultorioContext();
+        }
+        public void AgendarConsulta(string CPF, string Data, TimeOnly HoraInicio, TimeOnly HoraFim)
         {
             //Consulta consulta = new Consulta(CPF, DateOnly.Parse(Data), HoraInicio, HoraFim);
             //con.consultas.Add(consulta);
         }
 
-        public static bool DeletarConsulta(this Consultorio con, string CPF, string Data, TimeOnly horaInicio)
+        public bool DeletarConsulta(string CPF, string Data, TimeOnly horaInicio)
         {
-            DateOnly dataConsu = DateOnly.Parse(Data);
-            int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF && c.dataConsulta == dataConsu && c.horaInicio == horaInicio);
+            //DateOnly dataConsu = DateOnly.Parse(Data);
+            //int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF && c.dataConsulta == dataConsu && c.horaInicio == horaInicio);
 
-            if (removidos > 0)
-                return true;
-            else
-                return false;
+            //if (removidos > 0)
+            //    return true;
+            //else
+            //    return false;
+
+            return true;
         }
 
-        public static bool DeletarConsulta(this Consultorio con, string CPF)
+        public bool DeletarConsulta(string CPF)
         {
-            int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF);
+            //int removidos = con.consultas.RemoveAll(c => c.CPFPaciente == CPF);
 
-            if (removidos > 0)
-                return true;
-            else
-                return false;
+            //if (removidos > 0)
+            //    return true;
+            //else
+            //    return false;
+
+            return true;
         }
 
-        public static Consulta? ListarConsultasFuturas(this Consultorio con, string CPF)
+        public Consulta? ListarConsultasFuturas(string CPF)
         {
-            DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
-            TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
-            return con.consultas
-                .Find(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
+            //DateOnly dataAtual = DateOnly.FromDateTime(DateTime.Now);
+            //TimeOnly horaAtual = TimeOnly.FromDateTime(DateTime.Now);
+            //return con.consultas
+            //    .Find(c => c.CPFPaciente == CPF && ((c.dataConsulta > dataAtual) || (c.dataConsulta == dataAtual && c.horaInicio >= horaAtual)));
+            return new Consulta();
         }
 
-        public static List<Consulta> ListarConsultas(this Consultorio con)
+        public List<Consulta> ListarConsultas()
         {
-            return con.consultas
-                .OrderBy(c => c.dataConsulta)
-                .ThenBy(c => c.horaInicio)
-                .ToList();
+            //return con.consultas
+            //    .OrderBy(c => c.dataConsulta)
+            //    .ThenBy(c => c.horaInicio)
+            //    .ToList();
+            return new List<Consulta>();
         }
 
-        public static List<Consulta> ListarConsultas(this Consultorio con, DateOnly DataInicio, DateOnly DataFim)
+        public List<Consulta> ListarConsultas(DateOnly DataInicio, DateOnly DataFim)
         {
-            return con.consultas
-                .FindAll(c => c.dataConsulta >= DataInicio && c.dataConsulta <= DataFim)
-                .OrderBy(c => c.dataConsulta)
-                .ThenBy(c => c.horaInicio)
-                .ToList();
+            //return con.consultas
+            //    .FindAll(c => c.dataConsulta >= DataInicio && c.dataConsulta <= DataFim)
+            //    .OrderBy(c => c.dataConsulta)
+            //    .ThenBy(c => c.horaInicio)
+            //    .ToList();
+            return new List<Consulta>();
         }
     }
 }

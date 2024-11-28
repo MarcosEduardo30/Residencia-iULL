@@ -6,8 +6,6 @@ namespace ClinicaOdontologicaPersistencia.Interface
     {
         public static void menuPrincipal()
         {
-            Consultorio consultorio = new Consultorio();
-
             bool loop = true;
             while (loop)
             {
@@ -20,10 +18,10 @@ namespace ClinicaOdontologicaPersistencia.Interface
                 switch (resp)
                 {
                     case "1":
-                        PacienteInterface.MenuPacientes(consultorio);
+                        PacienteInterface.MenuPacientes();
                         break;
                     case "2":
-                        ConsultaInterface.MenuConsultas(consultorio);
+                        ConsultaInterface.MenuConsultas();
                         break;
                     case "3":
                         loop = false;

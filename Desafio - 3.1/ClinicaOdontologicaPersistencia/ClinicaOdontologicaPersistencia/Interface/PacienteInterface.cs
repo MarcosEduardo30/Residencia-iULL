@@ -6,7 +6,9 @@ namespace ClinicaOdontologicaPersistencia.Interface
 {
     public static class PacienteInterface
     {
-        public static void MenuPacientes(Consultorio consultorio)
+        static readonly PacienteController PacCon = new PacienteController();
+        static readonly ConsultaController ConsulCon = new ConsultaController();
+        public static void MenuPacientes()
         {
             bool loop = true;
             while (loop)
@@ -22,16 +24,16 @@ namespace ClinicaOdontologicaPersistencia.Interface
                 switch (resp)
                 {
                     case "1":
-                        CadastrarPaciente(consultorio);
+                        CadastrarPaciente();
                         break;
                     case "2":
-                        ExcluirPaciente(consultorio);
+                        ExcluirPaciente();
                         break;
                     case "3":
-                        ListarPacientes(consultorio, "CPF");
+                        ListarPacientes("CPF");
                         break;
                     case "4":
-                        ListarPacientes(consultorio, "Nome");
+                        ListarPacientes("Nome");
                         break;
                     case "5":
                         loop = false;
@@ -43,7 +45,7 @@ namespace ClinicaOdontologicaPersistencia.Interface
             }
         }
 
-        public static void CadastrarPaciente(Consultorio consultorio)
+        public static void CadastrarPaciente()
         {
             string CPF;
             string Nome;
@@ -53,7 +55,7 @@ namespace ClinicaOdontologicaPersistencia.Interface
             {
                 Console.Write("CPF: ");
                 CPF = Console.ReadLine().Trim();
-                string CPFVal = PacienteValidacoes.isCpfValid(consultorio, CPF);
+                string CPFVal = PacienteValidacoes.isCpfValid(CPF);
                 if (CPFVal != "")
                 {
                     Console.WriteLine(CPFVal);
@@ -87,38 +89,39 @@ namespace ClinicaOdontologicaPersistencia.Interface
                 }
                 else break;
             }
-            consultorio.incluirPaciente(CPF, Nome, DateTime.Parse(Data));
+
+            PacCon.incluirPaciente(CPF, Nome, DateTime.Parse(Data));
             Console.WriteLine("Paciente cadastrado com sucesso");
         }
 
-        public static void ExcluirPaciente(Consultorio consultorio)
+        public static void ExcluirPaciente()
         {
             Console.Write("CPF: ");
             string CPFInput = Console.ReadLine();
-            string CPFVal = PacienteValidacoes.isPacienteDeleteValid(consultorio, CPFInput);
+            string CPFVal = PacienteValidacoes.isPacienteDeleteValid(CPFInput);
             if (CPFVal != "")
                 Console.WriteLine(CPFVal);
             else
             {
-                consultorio.DeletarPaciente(CPFInput);
+                PacCon.DeletarPaciente(CPFInput);
                 Console.WriteLine("Paciente deletado com sucesso");
             }
 
         }
 
-        public static void ListarPacientes(Consultorio consultorio, string ordem)
+        public static void ListarPacientes(string ordem)
         {
             Console.WriteLine("--------------------------------------------------------------------------");
             Console.WriteLine("CPF        \tNome                          \tDt.Nasc    \tIdade");
             Console.WriteLine("--------------------------------------------------------------------------");
 
-            List<Paciente> pacientesOrdenados = consultorio.ListarPacientes(ordem);
+            List<Paciente> pacientesOrdenados = PacCon.ListarPacientes(ordem);
             foreach (Paciente p in pacientesOrdenados)
             {
                 Console.WriteLine($"{p.CPF}\t{p.Nome.PadRight(30)}\t{p.DataNascimento.ToString("dd/MM/yyyy")}\t{p.Idade}");
-                if (consultorio.existeConsultaFutura(p.CPF))
+                if (ConsultaValidacoes.existeConsultaFutura(p.CPF))
                 {
-                    Consulta con = consultorio.ListarConsultasFuturas(p.CPF);
+                    Consulta con = ConsulCon.ListarConsultasFuturas(p.CPF);
                     Console.WriteLine($"           \tAgendado para: {con.dataConsulta}");
                     Console.WriteLine($"           \t{con.horaInicio} às {con.horaFim}");
                 }

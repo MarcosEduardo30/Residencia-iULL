@@ -1,37 +1,48 @@
-﻿using ClinicaOdontologicaPersistencia.Entidades;
+﻿using ClinicaOdontologicaPersistencia.Data;
+using ClinicaOdontologicaPersistencia.Entidades;
 
 namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
 {
-    public static class PacienteController
+    public class PacienteController
     {
-        public static void incluirPaciente(this Consultorio con, string CPF, string Nome, DateTime DataNascimento)
+        ConsultorioContext dbContext;
+
+        public PacienteController()
+        {
+            dbContext = new ConsultorioContext();
+        }
+
+        public void incluirPaciente(string CPF, string Nome, DateTime DataNascimento)
         {
             //Paciente paciente = new Paciente(CPF, Nome, DataNascimento);
             //con.pacientes.Add(paciente);
         }
 
-        public static void DeletarPaciente(this Consultorio con, string CPF)
+        public void DeletarPaciente(string CPF)
         {
-            con.pacientes.RemoveAll(p => p.CPF == CPF);
-            con.DeletarConsulta(CPF);
+            //con.pacientes.RemoveAll(p => p.CPF == CPF);
+            //con.DeletarConsulta(CPF);
         }
 
-        public static List<Paciente> ListarPacientes(this Consultorio con, string ordem)
+        public List<Paciente> ListarPacientes(string ordem)
         {
-            if (ordem == "CPF")
-            {
-                return con.pacientes.OrderBy(p => p.CPF).ToList();
-            }
-            else
-            {
-                return con.pacientes.OrderBy(p => p.Nome).ToList();
-            }
+            //if (ordem == "CPF")
+            //{
+            //    return con.pacientes.OrderBy(p => p.CPF).ToList();
+            //}
+            //else
+            //{
+            //    return con.pacientes.OrderBy(p => p.Nome).ToList();
+            //}
+            List < Paciente > placeholder = new List < Paciente > ();
+            return placeholder;
 
         }
 
-        public static Paciente? ListarPaciente(this Consultorio con, string CPF)
+        public Paciente? ListarPaciente(string CPF)
         {
-            return con.pacientes.Find(p => p.CPF == CPF);
+            //return con.pacientes.Find(p => p.CPF == CPF);
+            return new Paciente();
         }
     }
 }
