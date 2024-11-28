@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClinicaOdontologicaPersistencia.Entidades
 {
@@ -11,6 +6,7 @@ namespace ClinicaOdontologicaPersistencia.Entidades
     {
         public int Id { get; set; }
         public string CPFPaciente { get; set; }
+        public Paciente Paciente { get; set; }
         public DateOnly dataConsulta { get; set; }
         public TimeOnly horaInicio { get; set; }
         public TimeOnly horaFim { get; set; }

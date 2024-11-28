@@ -11,6 +11,8 @@ namespace ClinicaOdontologicaPersistencia.Entidades
         [Column(TypeName = "timestamp(6)")]
         public DateTime DataNascimento { get; set; }
 
+        public List<Consulta> Consultas { get; set; }
+
         [NotMapped]
         public int Idade
         {

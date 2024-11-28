@@ -1,5 +1,6 @@
 ﻿using ClinicaOdontologicaPersistencia.Data;
 using ClinicaOdontologicaPersistencia.Entidades;
+using Microsoft.EntityFrameworkCore;
 
 namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
 {
@@ -73,6 +74,7 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
             return dbContext.Consultas
                 .OrderBy(c => c.dataConsulta)
                 .ThenBy(c => c.horaInicio)
+                .Include(c => c.Paciente)
                 .ToList();
         }
 
@@ -82,6 +84,7 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio
                 .Where(c => c.dataConsulta >= DataInicio && c.dataConsulta <= DataFim)
                 .OrderBy(c => c.dataConsulta)
                 .ThenBy(c => c.horaInicio)
+                .Include(c => c.Paciente)
                 .ToList();
         }
     }

@@ -119,7 +119,7 @@ namespace ClinicaOdontologicaPersistencia.Interface
 
             Console.Write("CPF: ");
             string CPFInput = Console.ReadLine();
-            if (PacienteValidacoes.isCPFCadastrado(CPFInput))
+            if (!PacienteValidacoes.isCPFCadastrado(CPFInput))
             {
                 Console.WriteLine("Erro: Paciente não cadastrado");
                 return;
@@ -173,7 +173,7 @@ namespace ClinicaOdontologicaPersistencia.Interface
             while (true)
             {
                 Console.Write("Apresentar a agenda T-Toda ou P-Periodo: ");
-                string res = Console.ReadLine();
+                string res = Console.ReadLine().Trim().ToUpper();
                 if (res == "T" || res == "P")
                 {
                     modo = res;
@@ -225,13 +225,12 @@ namespace ClinicaOdontologicaPersistencia.Interface
             Console.WriteLine("-------------------------------------------------------------------------------------------------------");
             foreach (Consulta cons in consultas)
             {
-                Paciente pac = PacCon.ListarPaciente(cons.CPFPaciente);
                 Console.WriteLine($"{cons.dataConsulta}" +
                     $"\t{cons.horaInicio}" +
                     $"\t{cons.horaFim}" +
                     $"\t{cons.TempoConsulta.ToString("hh\\:mm")}" +
-                    $"\t{pac.Nome.PadRight(30)}" +
-                    $"\t{pac.DataNascimento.ToString("dd/MM/yyyy")}");
+                    $"\t{cons.Paciente.Nome.PadRight(30)}" +
+                    $"\t{cons.Paciente.DataNascimento.ToString("dd/MM/yyyy")}");
             }
 
         }

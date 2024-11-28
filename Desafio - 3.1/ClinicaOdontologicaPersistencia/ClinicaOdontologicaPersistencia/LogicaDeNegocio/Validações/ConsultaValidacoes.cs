@@ -11,7 +11,7 @@ namespace ClinicaOdontologicaPersistencia.LogicaDeNegocio.Validações
         //Pensar depois na possibilidade de refatorar essa validação, visto que ela faz uma verificação de Paciente
         public static string isCpfValid(string CPF)
         {
-            if (PacienteValidacoes.isCPFCadastrado(CPF))
+            if (!PacienteValidacoes.isCPFCadastrado(CPF))
                 return "Erro: Não há paciente com o CPF cadastrado";
             if (existeConsultaFutura(CPF))
                 return "Erro: paciente já possui uma consulta marcada";
